@@ -34,3 +34,7 @@ A small Python standard-library [report validator](tools/validate_report.py) and
 python -m unittest discover -s tests -v
 python tools/validate_report.py examples/host-playback.json
 ```
+
+## Verification checkpoint (2026-10-10)
+
+The public repository was freshly cloned into a disposable directory on a separate VPS host. All **7 Python unit tests passed** and `examples/host-playback.json` passed schema validation. This is a **host-side verification only**; a successful GitHub Actions run and TV playback remain unverified. This report validator cannot guarantee that all secrets were removed.
