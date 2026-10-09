@@ -45,3 +45,6 @@ This is an independent AlekS / GameFree24 initiative. The public repository is d
 6. Check the form's program terms and submit personally; do not commit private details to GitHub.
 
 **Important:** This repo is young. The program prioritizes projects with meaningful ecosystem use and active maintainer responsibilities; eligibility and approval are not guaranteed.
+## Verified GitHub Actions result (2026-10-10)
+
+GitHub REST API independently reports five recent completed, successful runs of `Validate research reports`. One verified successful run: https://github.com/aerolit266/AlekS-Chromium-webOS-OSS/actions/runs/37971212874 (commit `9170a88e`). This demonstrates hosted CI execution, **not** on-device browser or TV hardware validation.
