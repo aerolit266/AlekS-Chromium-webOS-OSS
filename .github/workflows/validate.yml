@@ -16,3 +16,5 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Example report
         run: python tools/validate_report.py examples/host-playback.json
+      - name: Synthetic playback metrics
+        run: python tools/analyze_playback.py examples/playback-measurements.json
