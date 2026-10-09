@@ -1,0 +1,7 @@
+{
+  "description": "Synthetic demonstration data. Not measured on real hardware.",
+  "samples": [
+    {"startup_ms": 100, "frame_drops": 0, "seek_ms": 40, "av_drift_ms": -3},
+    {"startup_ms": 160, "frame_drops": 1, "seek_ms": 65, "av_drift_ms": 5}
+  ]
+}
