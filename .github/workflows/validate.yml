@@ -18,3 +18,5 @@ jobs:
         run: python tools/validate_report.py examples/host-playback.json
       - name: Synthetic playback metrics
         run: python tools/analyze_playback.py examples/playback-measurements.json
+      - name: Synthetic browser lifecycle
+        run: python tools/browser_lifecycle.py examples/browser-lifecycle.json
