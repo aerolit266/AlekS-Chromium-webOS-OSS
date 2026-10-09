@@ -1,0 +1,9 @@
+{
+  "device_family": "legacy webOS / ARMv7",
+  "webos_version": "6.x",
+  "build_id": "example-build",
+  "test_type": "playback",
+  "environment": "HOST",
+  "result": "TESTED_ON_HOST",
+  "evidence": "Illustrative host-only synthetic stream test. This is sample data, not a claim about real hardware."
+}
