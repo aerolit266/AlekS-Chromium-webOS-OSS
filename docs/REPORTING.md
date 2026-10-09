@@ -16,3 +16,9 @@ States: `PLANNED`, `BUILT`, `TESTED_ON_HOST`, `VERIFIED_ON_TV`. The last state r
 Supported test types: launch, back_exit, fullscreen, playback, seek, hardware_decode, performance.
 
 Never submit logs, keys, identifiers or diagnostics until a human has reviewed them. A PASS from this script is not a comprehensive secret scan.
+
+## Privacy regression coverage
+
+The test suite includes 11 cases covering missing fields, invalid verification states, nested token-like field names, MAC-style identifiers, private IPv4, non-public IPv6, and a public IPv6 control. Latest independent fresh-clone run: **11/11 PASS** on a VPS on 2026-10-10. These checks are heuristic and do not provide comprehensive secret detection or a legal clearance for redistribution.
+
+The same test-report schema may later be reused in AlekS Kino research, but this repository does not include or open-source its production media engine.
