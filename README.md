@@ -46,3 +46,7 @@ An original [playback measurements analyzer](tools/analyze_playback.py) calculat
 ## Browser lifecycle validation
 
 The original [lifecycle state-machine validator](tools/browser_lifecycle.py) tests anonymized event traces for launch, fullscreen, Back and Exit behavior. See [lifecycle protocol](docs/BROWSER_LIFECYCLE.md). The latest independent clean-clone VPS run passed **24/24 unit tests** and all three example tools (2026-10-10). These synthetic checks do not validate a physical LG TV. GitHub Actions status for the newest commits requires separate confirmation.
+
+## Real LG test observations (limited evidence)
+
+A [carefully anonymized summary of historical on-device Chromium 120 experiments](docs/REAL_DEVICE_OBSERVATIONS.md) is now available. It includes a short 720p playback observation, a GPU/WebGL check and scripted browser-lifecycle diagnostics. Hardware video decoding, 4K/HDR and physical-remote behavior remain **unverified**.
