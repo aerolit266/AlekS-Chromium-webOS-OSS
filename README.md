@@ -50,3 +50,10 @@ The original [lifecycle state-machine validator](tools/browser_lifecycle.py) tes
 ## Real LG test observations (limited evidence)
 
 A [carefully anonymized summary of historical on-device Chromium 120 experiments](docs/REAL_DEVICE_OBSERVATIONS.md) is now available. It includes a short 720p playback observation, a GPU/WebGL check and scripted browser-lifecycle diagnostics. Hardware video decoding, 4K/HDR and physical-remote behavior remain **unverified**.
+
+## Reproducible device research
+
+- [Step-by-step on-device verification protocol](docs/REPRODUCE_ON_DEVICE.md)
+- [Evidence-based engineering history and open problems](docs/PROJECT_HISTORY.md)
+
+These materials clearly distinguish actual TV observations from host-side and synthetic checks.
