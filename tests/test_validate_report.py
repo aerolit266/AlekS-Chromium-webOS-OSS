@@ -21,6 +21,14 @@ class ValidationTests(unittest.TestCase):
         self.assertTrue(validate({**GOOD, "token": "not-for-publication"}))
     def test_mac_rejected(self):
         self.assertTrue(validate({**GOOD, "evidence": "aa:bb:cc:dd:ee:ff"}))
+    def test_private_ipv6_rejected(self):
+        self.assertTrue(validate({**GOOD, "evidence": "device at fd12:3456::1"}))
+    def test_loopback_ipv6_rejected(self):
+        self.assertTrue(validate({**GOOD, "evidence": "endpoint ::1"}))
+    def test_nested_token_field_rejected(self):
+        self.assertTrue(validate({**GOOD, "metadata": {"access_token": "redacted"}}))
+    def test_public_ipv6_allowed(self):
+        self.assertEqual(validate({**GOOD, "evidence": "Example address 2606:4700:4700::1111"}), [])
     def test_invalid_state(self):
         self.assertTrue(validate({**GOOD, "result": "DONE"}))
     def test_missing_field(self):
