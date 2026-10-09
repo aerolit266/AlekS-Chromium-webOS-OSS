@@ -25,3 +25,12 @@ The operational AlekS Chromium development environment is maintained privately. 
 - [Notices](NOTICE.md)
 
 Maintained by the AlekS / GameFree24 project. This repository is not affiliated with LG or Google.
+
+## Open-source test utility
+
+A small Python standard-library [report validator](tools/validate_report.py) and [seven unit tests](tests/test_validate_report.py) are available. See [reporting guidelines](docs/REPORTING.md). A format-validation PASS is **not** evidence of playback on an actual LG TV and not a comprehensive security audit.
+
+```bash
+python -m unittest discover -s tests -v
+python tools/validate_report.py examples/host-playback.json
+```
