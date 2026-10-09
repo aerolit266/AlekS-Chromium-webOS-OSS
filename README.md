@@ -57,3 +57,7 @@ A [carefully anonymized summary of historical on-device Chromium 120 experiments
 - [Evidence-based engineering history and open problems](docs/PROJECT_HISTORY.md)
 
 These materials clearly distinguish actual TV observations from host-side and synthetic checks.
+
+## Maintainer and Open Source Program
+
+See the [evidence-grounded maintainer brief](docs/MAINTAINER_BRIEF.md) for project scope, reproducibility, honest limitations and prepared application wording. The application is **not submitted**, and acceptance is not guaranteed.
