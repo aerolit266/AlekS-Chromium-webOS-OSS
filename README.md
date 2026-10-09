@@ -42,3 +42,7 @@ The public repository was freshly cloned into a disposable directory on a separa
 ## Playback metrics utility
 
 An original [playback measurements analyzer](tools/analyze_playback.py) calculates medians and maxima for startup latency, dropped frames, seek delay and audio/video drift. See [measurement protocol](docs/PLAYBACK_METRICS.md). All bundled measurements are synthetic. The latest fresh-clone VPS check passed **16/16 Python tests** and both example CLI tools (2026-10-10). GitHub Actions results for this commit require separate confirmation.
+
+## Browser lifecycle validation
+
+The original [lifecycle state-machine validator](tools/browser_lifecycle.py) tests anonymized event traces for launch, fullscreen, Back and Exit behavior. See [lifecycle protocol](docs/BROWSER_LIFECYCLE.md). The latest independent clean-clone VPS run passed **24/24 unit tests** and all three example tools (2026-10-10). These synthetic checks do not validate a physical LG TV. GitHub Actions status for the newest commits requires separate confirmation.
