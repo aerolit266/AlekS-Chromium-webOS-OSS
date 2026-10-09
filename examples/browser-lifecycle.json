@@ -1,0 +1,4 @@
+{
+  "description": "Synthetic lifecycle sequence. Not measured on an LG TV.",
+  "events": ["LAUNCH", "READY", "ENTER_FULLSCREEN", "BACK", "BACK", "CLOSED"]
+}
