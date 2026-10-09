@@ -38,3 +38,7 @@ python tools/validate_report.py examples/host-playback.json
 ## Verification checkpoint (2026-10-10)
 
 The public repository was freshly cloned into a disposable directory on a separate VPS host. All **7 Python unit tests passed** and `examples/host-playback.json` passed schema validation. This is a **host-side verification only**; a successful GitHub Actions run and TV playback remain unverified. This report validator cannot guarantee that all secrets were removed.
+
+## Playback metrics utility
+
+An original [playback measurements analyzer](tools/analyze_playback.py) calculates medians and maxima for startup latency, dropped frames, seek delay and audio/video drift. See [measurement protocol](docs/PLAYBACK_METRICS.md). All bundled measurements are synthetic. The latest fresh-clone VPS check passed **16/16 Python tests** and both example CLI tools (2026-10-10). GitHub Actions results for this commit require separate confirmation.
