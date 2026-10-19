@@ -11,7 +11,7 @@ Independent compatibility research exploring modern Chromium on legacy LG webOS 
 - Research Chromium media routing, Mojo IPC, platform services and GPU acceleration.
 - Track verified measurements separately from experimental or proposed work.
 
-**Current status:** research and documentation; no production-ready browser, HDR or 4K hardware-decoding support is claimed here. This public repository does **not** contain a working Chromium binary, LG firmware, proprietary platform libraries, private patches or credentials.
+**Current status:** research and documentation. Private experimental Chromium 120 builds have passed bounded on-device GPU, 4K hardware-video and HDR10 output-signal tests, but no production-ready browser or universal 4K/HDR reliability is claimed here. See the [public non-code progress summary](docs/CHROMIUM120_PUBLIC_STATUS.ru.md). This public repository does **not** contain a working Chromium binary, LG firmware, proprietary platform libraries, private patches or credentials.
 
 ## Project boundaries
 
@@ -47,9 +47,11 @@ An original [playback measurements analyzer](tools/analyze_playback.py) calculat
 
 The original [lifecycle state-machine validator](tools/browser_lifecycle.py) tests anonymized event traces for launch, fullscreen, Back and Exit behavior. See [lifecycle protocol](docs/BROWSER_LIFECYCLE.md). The latest independent clean-clone VPS run passed **24/24 unit tests** and all three example tools (2026-10-10). These synthetic checks do not validate a physical LG TV. GitHub Actions status for the newest commits requires separate confirmation.
 
-## Real LG test observations (limited evidence)
+## Real LG test observations and progress
 
-A [carefully anonymized summary of historical on-device Chromium 120 experiments](docs/REAL_DEVICE_OBSERVATIONS.md) is now available. It includes a short 720p playback observation, a GPU/WebGL check and scripted browser-lifecycle diagnostics. Hardware video decoding, 4K/HDR and physical-remote behavior remain **unverified**.
+The [historical anonymized observation summary](docs/REAL_DEVICE_OBSERVATIONS.md) covers early 9–10 October 2026 tests, including 720p and GPU diagnostics. Later private on-device engineering tests of Chromium 120 passed bounded VP9 4K60 SDR, HEVC hardware playback, and HDR10 video-output signaling, with explicit limitations.
+
+The new [sanitized public project update (Russian, 20 October 2026)](docs/CHROMIUM120_PUBLIC_STATUS.ru.md) summarizes these later findings and outlines the proposed webOS 4/5 adapter strategy without releasing proprietary implementation details, binary builds, or internal configurations. These tests do **not** establish a production-ready or universally compatible browser.
 
 ## Reproducible device research
 
