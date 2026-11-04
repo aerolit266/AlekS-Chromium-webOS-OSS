@@ -63,3 +63,11 @@ These materials clearly distinguish actual TV observations from host-side and sy
 ## Maintainer and Open Source Program
 
 See the [evidence-grounded maintainer brief](docs/MAINTAINER_BRIEF.md) for project scope, reproducibility, honest limitations and prepared application wording. The application is **not submitted**, and acceptance is not guaranteed.
+
+---
+
+### Авторство, лицензирование и поддержка
+
+**© 2026 AlekS / GameFree24 — оригинальные разработки GitHub [@aerolit266](https://github.com/aerolit266)** (в пределах прав на собственные материалы). Права сторонних авторов и условия их лицензий сохраняются. См. [правовой режим](COPYRIGHT.md) и [MIT для кода](LICENSE-CODE) и [CC BY 4.0 для документации](LICENSE-DOCS.md).
+
+**Поддержать разработку:** добровольный перевод через **Сбербанк** по номеру **+7 (902) 919-87-02**. [Подробнее](SUPPORT.md). Перевод не является покупкой лицензии.
